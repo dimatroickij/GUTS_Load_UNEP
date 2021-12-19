@@ -1,0 +1,26 @@
+Virtual User Script started at: 12/19/2021 12:21:42
+Starting action vuser_init.
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Starting action VerifyCMSSignatureDetached_UNEP_withSignedReport.
+VerifyCMSSignatureDetached_UNEP_withSignedReport.c(3): web_cache_cleanup started  	[MsgId: MMSG-26355]
+VerifyCMSSignatureDetached_UNEP_withSignedReport.c(3): web_cache_cleanup was successful  	[MsgId: MMSG-26392]
+VerifyCMSSignatureDetached_UNEP_withSignedReport.c(4): web_cleanup_auto_headers started  	[MsgId: MMSG-26355]
+VerifyCMSSignatureDetached_UNEP_withSignedReport.c(4): web_cleanup_auto_headers was successful  	[MsgId: MMSG-26392]
+VerifyCMSSignatureDetached_UNEP_withSignedReport.c(5): web_cleanup_cookies started  	[MsgId: MMSG-26355]
+VerifyCMSSignatureDetached_UNEP_withSignedReport.c(5): web_cleanup_cookies was successful  	[MsgId: MMSG-26392]
+VerifyCMSSignatureDetached_UNEP_withSignedReport.c(7): C:\LR_DATA_UNEP\50k/VerifyCMSSignatureDetached_withSignedReport_64.xml
+VerifyCMSSignatureDetached_UNEP_withSignedReport.c(10): Use file: {VerifyCMSSignatureDetached_withSignedReport_file}
+VerifyCMSSignatureDetached_UNEP_withSignedReport.c(14): Notify: Transaction "VerifyCMSSignatureDetached_withSignedReport" started.
+VerifyCMSSignatureDetached_UNEP_withSignedReport.c(15): SOAP request "VerifyCMSSignatureDetached_withSignedReport" started
+VerifyCMSSignatureDetached_UNEP_withSignedReport.c(15): SOAP request "VerifyCMSSignatureDetached_withSignedReport" was successful
+VerifyCMSSignatureDetached_UNEP_withSignedReport.c(31): Notify: Transaction "VerifyCMSSignatureDetached_withSignedReport" ended with a "Pass" status (Duration: 1.1059 Wasted Time: 0.0460).
+Ending action VerifyCMSSignatureDetached_UNEP_withSignedReport.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.
+Warning: Extension LrXml.dll reports error -1 on call to function ExtPerThreadTerminate
+Warning: Vuser failed to terminate extension.

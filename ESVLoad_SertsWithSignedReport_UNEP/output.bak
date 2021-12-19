@@ -1,0 +1,24 @@
+Virtual User Script started at: 12/19/2021 12:56:39
+Starting action vuser_init.
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Starting action VerifyCertificate_withSignedReport.
+VerifyCertificate_withSignedReport.c(3): web_cache_cleanup started  	[MsgId: MMSG-26355]
+VerifyCertificate_withSignedReport.c(3): web_cache_cleanup was successful  	[MsgId: MMSG-26392]
+VerifyCertificate_withSignedReport.c(4): web_cleanup_auto_headers started  	[MsgId: MMSG-26355]
+VerifyCertificate_withSignedReport.c(4): web_cleanup_auto_headers was successful  	[MsgId: MMSG-26392]
+VerifyCertificate_withSignedReport.c(5): web_cleanup_cookies started  	[MsgId: MMSG-26355]
+VerifyCertificate_withSignedReport.c(5): web_cleanup_cookies was successful  	[MsgId: MMSG-26392]
+VerifyCertificate_withSignedReport.c(7): C:\LR_DATA_UNEP\certs/VerifyCertificate_withSignedReport_1359.xml
+VerifyCertificate_withSignedReport.c(10): Use file: {VerifyCertificate_withSignedReport_file}
+VerifyCertificate_withSignedReport.c(13): Notify: Transaction "VerifyCertificate_UNEP_withSignedReport" started.
+VerifyCertificate_withSignedReport.c(15): SOAP request "VerifyCertificate_UNEP_withSignedReport" started
+VerifyCertificate_withSignedReport.c(15): SOAP request "VerifyCertificate_UNEP_withSignedReport" was successful
+VerifyCertificate_withSignedReport.c(31): Notify: Transaction "VerifyCertificate_UNEP_withSignedReport" ended with a "Pass" status (Duration: 0.9247 Wasted Time: 0.0464).
+Ending action VerifyCertificate_withSignedReport.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

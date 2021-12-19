@@ -1,0 +1,26 @@
+Virtual User Script started at: 12/19/2021 12:50:39
+Starting action vuser_init.
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Starting action VerifyXAdES_UNEP_simple.
+VerifyXAdES_UNEP_simple.c(3): web_cache_cleanup started  	[MsgId: MMSG-26355]
+VerifyXAdES_UNEP_simple.c(3): web_cache_cleanup was successful  	[MsgId: MMSG-26392]
+VerifyXAdES_UNEP_simple.c(4): web_cleanup_auto_headers started  	[MsgId: MMSG-26355]
+VerifyXAdES_UNEP_simple.c(4): web_cleanup_auto_headers was successful  	[MsgId: MMSG-26392]
+VerifyXAdES_UNEP_simple.c(5): web_cleanup_cookies started  	[MsgId: MMSG-26355]
+VerifyXAdES_UNEP_simple.c(5): web_cleanup_cookies was successful  	[MsgId: MMSG-26392]
+VerifyXAdES_UNEP_simple.c(7): C:\LR_DATA_UNEP\5120/VerifyXAdES_simple_82.xml
+VerifyXAdES_UNEP_simple.c(10): Use file: {VerifyXAdES_simple_file}
+VerifyXAdES_UNEP_simple.c(14): Notify: Transaction "VerifyXAdES_UNEP_simple" started.
+VerifyXAdES_UNEP_simple.c(15): SOAP request "VerifyXAdES_UNEP_simple" started
+VerifyXAdES_UNEP_simple.c(15): SOAP request "VerifyXAdES_UNEP_simple" was successful
+VerifyXAdES_UNEP_simple.c(31): Notify: Transaction "VerifyXAdES_UNEP_simple" ended with a "Pass" status (Duration: 1.5360 Wasted Time: 0.2731).
+Ending action VerifyXAdES_UNEP_simple.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.
+Warning: Extension LrXml.dll reports error -1 on call to function ExtPerThreadTerminate
+Warning: Vuser failed to terminate extension.

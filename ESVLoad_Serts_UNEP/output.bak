@@ -1,0 +1,24 @@
+Virtual User Script started at: 11/3/2020 1:24:03 PM
+Starting action vuser_init.
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Starting action VerifyCertificate_simple.
+VerifyCertificate_simple.c(3): web_cache_cleanup started  	[MsgId: MMSG-26355]
+VerifyCertificate_simple.c(3): web_cache_cleanup was successful  	[MsgId: MMSG-26392]
+VerifyCertificate_simple.c(4): web_cleanup_auto_headers started  	[MsgId: MMSG-26355]
+VerifyCertificate_simple.c(4): web_cleanup_auto_headers was successful  	[MsgId: MMSG-26392]
+VerifyCertificate_simple.c(5): web_cleanup_cookies started  	[MsgId: MMSG-26355]
+VerifyCertificate_simple.c(5): web_cleanup_cookies was successful  	[MsgId: MMSG-26392]
+VerifyCertificate_simple.c(7): C:\LR_DATA\certs/VerifyCertificate_simple_3846.xml
+VerifyCertificate_simple.c(10): Use file: {VerifyCertificate_simple_file}
+VerifyCertificate_simple.c(12): Notify: Transaction "VerifyCertificate_simple" started.
+VerifyCertificate_simple.c(13): SOAP request "VerifyCertificate_simple" started
+VerifyCertificate_simple.c(13): SOAP request "VerifyCertificate_simple" was successful
+VerifyCertificate_simple.c(30): Notify: Transaction "VerifyCertificate_simple" ended with a "Pass" status (Duration: 0.5289 Wasted Time: 0.0890).
+Ending action VerifyCertificate_simple.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.
