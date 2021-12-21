@@ -10,8 +10,8 @@ VerifyPAdES_UNEP_withSignedReport()
 	lr_output_message("Use file: {VerifyPAdES_withSignedReport_file}");
 
 	lr_continue_on_error(1);
-	lr_start_transaction("VerifyPAdES_withSignedReport");
-	soap_request("StepName=VerifyPAdES_withSignedReporte",
+	lr_start_transaction("VerifyPAdES_UNEP_withSignedReport");
+	soap_request("StepName=VerifyPAdES_UNEP_withSignedReporte",
 		"URL={URL}",
 		"SOAPEnvelope="
 			"{request}",
@@ -22,12 +22,12 @@ VerifyPAdES_UNEP_withSignedReport()
 	//lr_output_message("log/result: %s", lr_eval_string("{result}"));
 	if(strstr( lr_eval_string("{result}"), lr_eval_string("{VerifyPAdES_withSignedReport_response}"))==NULL)
 	{
-        lr_end_transaction("VerifyPAdES_withSignedReport", LR_FAIL);
+        lr_end_transaction("VerifyPAdES_UNEP_withSignedReport", LR_FAIL);
 		lr_output_message( lr_eval_string("error: expected contains VerifyPAdES_withSignedReport_response}, but got {result}"));
 	}
 	else
 	{
-		lr_end_transaction("VerifyPAdES_withSignedReport", LR_PASS);
+		lr_end_transaction("VerifyPAdES_UNEP_withSignedReport", LR_PASS);
 	}
 	
     lr_continue_on_error(0);

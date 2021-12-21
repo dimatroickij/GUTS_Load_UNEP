@@ -11,8 +11,8 @@ VerifyCADES_UNEP_withSignedReport()
 	
 	lr_continue_on_error(1);
 
-	lr_start_transaction("VerifyCADES_withSignedReport");
-	soap_request("StepName=VerifyCADES_withSignedReport",
+	lr_start_transaction("VerifyCADES_UNEP_withSignedReport");
+	soap_request("StepName=VerifyCADES_UNEP_withSignedReport",
 		"URL={URL}",
 		"SOAPEnvelope="
 			"{request}",
@@ -23,12 +23,12 @@ VerifyCADES_UNEP_withSignedReport()
 	//lr_output_message("log/result: %s", lr_eval_string("{result}"));
 	if(strstr( lr_eval_string("{result}"), lr_eval_string("{VerifyCADES_withSignedReport_response}"))==NULL)
 	{
-        lr_end_transaction("VerifyCADES_withSignedReport", LR_FAIL);
+        lr_end_transaction("VerifyCADES_UNEP_withSignedReport", LR_FAIL);
 		lr_output_message( lr_eval_string("error: expected contains {VerifyCADES_withSignedReport_response}, but got {result}"));
 	}
 	else
 	{
-		lr_end_transaction("VerifyCADES_withSignedReport", LR_PASS);
+		lr_end_transaction("VerifyCADES_UNEP_withSignedReport", LR_PASS);
 	}
     
     lr_continue_on_error(0);

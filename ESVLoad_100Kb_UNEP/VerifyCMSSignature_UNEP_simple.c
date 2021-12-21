@@ -11,9 +11,9 @@ VerifyCMSSignature_UNEP_simple()
 
 	lr_continue_on_error(1);
 	
-	lr_start_transaction("VerifyCMSSignature_simple");
+	lr_start_transaction("VerifyCMSSignature_UNEP_simple");
 	
-	soap_request("StepName=VerifyCMSSignature_simple",
+	soap_request("StepName=VerifyCMSSignature_UNEP_simple",
 		"URL={URL}",
 		"SOAPEnvelope="
 			"{request}",
@@ -24,12 +24,12 @@ VerifyCMSSignature_UNEP_simple()
 	//lr_output_message("log/result: %s", lr_eval_string("{result}"));
 	if(strstr( lr_eval_string("{result}"), lr_eval_string("{VerifyCMSSignature_simple_response}"))==NULL)
 	{
-        lr_end_transaction("VerifyCMSSignature_simple", LR_FAIL);
+        lr_end_transaction("VerifyCMSSignature_UNEP_simple", LR_FAIL);
 		lr_output_message( lr_eval_string("error: expected contains {VerifyCMSSignature_simple_response}, but got {result}"));
 	}
 	else
 	{
-		lr_end_transaction("VerifyCMSSignature_simple", LR_PASS);
+		lr_end_transaction("VerifyCMSSignature_UNEP_simple", LR_PASS);
 	}
 	
     lr_continue_on_error(0);

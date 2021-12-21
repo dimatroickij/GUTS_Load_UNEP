@@ -11,8 +11,8 @@ VerifyCADES_UNEP_simple()
 
 	lr_continue_on_error(1);
 	
-	lr_start_transaction("VerifyCADES_simple");
-	soap_request("StepName=VerifyCADES_simple",
+	lr_start_transaction("VerifyCADES_UNEP_simple");
+	soap_request("StepName=VerifyCADES_UNEP_simple",
 		"URL={URL}",
 		"SOAPEnvelope="
 			"{request}",
@@ -23,12 +23,12 @@ VerifyCADES_UNEP_simple()
 	//lr_output_message("log/result: %s", lr_eval_string("{result}"));
 	if(strstr( lr_eval_string("{result}"), lr_eval_string("{VerifyCADES_simple_response}"))==NULL)
 	{
-        lr_end_transaction("VerifyCADES_simple", LR_FAIL);
+        lr_end_transaction("VerifyCADES_UNEP_simple", LR_FAIL);
 		lr_output_message( lr_eval_string("error: expected contains VerifyCADES_simple_response}, but got {result}"));
 	}
 	else
 	{
-		lr_end_transaction("VerifyCADES_simple", LR_PASS);
+		lr_end_transaction("VerifyCADES_UNEP_simple", LR_PASS);
 	}
     lr_continue_on_error(0);
 	return 0;

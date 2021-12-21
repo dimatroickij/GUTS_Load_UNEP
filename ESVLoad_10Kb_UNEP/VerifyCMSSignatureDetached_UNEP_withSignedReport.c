@@ -11,8 +11,8 @@ VerifyCMSSignatureDetached_UNEP_withSignedReport()
 	
 	lr_continue_on_error(1);
 	
-	lr_start_transaction("VerifyCMSSignatureDetached_withSignedReport");
-	soap_request("StepName=VerifyCMSSignatureDetached_withSignedReport",
+	lr_start_transaction("VerifyCMSSignatureDetached_UNEP_withSignedReport");
+	soap_request("StepName=VerifyCMSSignatureDetached_UNEP_withSignedReport",
 		"URL={URL}",
 		"SOAPEnvelope="
 			"{request}",
@@ -23,12 +23,12 @@ VerifyCMSSignatureDetached_UNEP_withSignedReport()
 	//lr_output_message("log/result: %s", lr_eval_string("{result}"));
 	if(strstr( lr_eval_string("{result}"), lr_eval_string("{VerifyCMSSignatureDetached_withSignedReport_response}"))==NULL)
 	{
-        lr_end_transaction("VerifyCMSSignatureDetached_withSignedReport", LR_FAIL);
+        lr_end_transaction("VerifyCMSSignatureDetached_UNEP_withSignedReport", LR_FAIL);
 		lr_output_message( lr_eval_string("error: expected contains {VerifyCMSSignatureDetached_withSignedReport_response}, but got {result}"));
 	}
 	else
 	{
-		lr_end_transaction("VerifyCMSSignatureDetached_withSignedReport", LR_PASS);
+		lr_end_transaction("VerifyCMSSignatureDetached_UNEP_withSignedReport", LR_PASS);
 	}
     
     lr_continue_on_error(0);
